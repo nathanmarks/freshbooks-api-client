@@ -14,5 +14,7 @@ Test('Client initialization', t => {
 
   const api = FreshbooksApi(config);
 
-  t.deepEqual(api.auth, config.auth, 'should create an API client with the specified configuration');
+  console.log(api);
+
+  t.deepEqual(api.config, config, 'should create an API client with the specified configuration');
 });
