@@ -10,7 +10,7 @@
     "lint": "eslint lib",
     "prebuild": "npm run clean",
     "prepublish": "npm run lint && npm run test",
-    "test": "babel-node test/index.js"
+    "test": "babel-node test/index.js | tap-spec"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/nathanmarks/teamwork-api-client#readme",
   "devDependencies": {
+    "babel-cli": "^6.3.17",
     "babel-eslint": "^4.1.6",
     "doctoc": "^0.15.0",
     "eslint": "^1.10.3",
