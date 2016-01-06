@@ -1,7 +1,10 @@
 import Test from 'tape';
 import FreshbooksApi from '../lib';
 
-Test('Client initialization', t => {
+import './util/request';
+import './util/xml2jsBuilder';
+
+Test('Library initialization', t => {
   t.plan(1);
 
   const config = {
@@ -14,7 +17,23 @@ Test('Client initialization', t => {
 
   const api = FreshbooksApi(config);
 
-  console.log(api);
-
   t.deepEqual(api.config, config, 'should create an API client with the specified configuration');
 });
+
+// Test('Client Endpoint', t => {
+//   t.plan(1);
+
+//   const config = {
+//     auth: {
+//       type: 'token',
+//       token: 'abcdefg123456',
+//       subdomain: 'my-subdomain'
+//     }
+//   };
+
+//   const api = FreshbooksApi(config);
+
+//   api.client.get();
+
+//   t.equal(1, 1);
+// });

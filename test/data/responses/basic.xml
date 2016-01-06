@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<response xmlns="https://www.freshbooks.com/api/" status="ok">
+  <client>
+    <client_id>13</client_id>
+    <first_name>Jane</first_name>
+    <last_name>Doe</last_name>
+  </client>
+</response>
