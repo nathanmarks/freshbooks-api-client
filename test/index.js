@@ -1,8 +1,10 @@
 import Test from 'tape';
 import FreshbooksApi from '../lib';
 
-import './util/request';
 import './util/xml2jsBuilder';
+import './util/xmlParser';
+import './util/request';
+
 
 Test('Library initialization', t => {
   t.plan(1);

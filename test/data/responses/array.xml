@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<response xmlns="https://www.freshbooks.com/api/" status="ok">
+  <contacts>
+    <contact>
+      <username>nathan</username>
+      <phone>123-123-1234</phone>
+      <emails>
+        <email>nathan@gmail.com</email>
+        <email>nathan@yahoo.com</email>
+      </emails>
+    </contact>
+    <contact>
+      <username>woof</username>
+      <phone>123-123-1234</phone>
+      <emails>
+        <email>woof@gmail.com</email>
+        <email>woof@yahoo.com</email>
+      </emails>
+    </contact>
+  </contacts>
+</response>
